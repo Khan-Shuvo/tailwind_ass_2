@@ -7,7 +7,8 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <title>Document</title>
 </head>
 
@@ -81,23 +82,50 @@
 
     </header>
 
+    <!-- hero section -->
+
+    <section
+        class="h-screen bg-cover bg-center bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/images/banner.png')] bg-black/60 ">
+        <div class="flex flex-col justify-center h-full px-6 md:px-20 text-white">
+            <!-- heading -->
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                Transform <br> Your Body
+            </h1>
+            <p class="mt-4 text-sm md:text-base max-w-sm text-gray-500">
+                Take control of your fitness journey and reshape your body and mind through the power of fitness.
+            </p>
+
+            <!-- buttons -->
+            <div class="mt-6 flex space-x-4">
+                <button
+                    class="px-6 py-3 bg-gradient-to-r from-[#F66844] to-[#FF921B] rounded-md font-semibold shadow-lg">
+                    Get Started
+                </button>
+                <div class="p-[2px] rounded-md bg-gradient-to-r from-[#F66844] to-[#FF921B]">
+                    <button class="px-6 py-3 bg-black rounded-md font-semibold flex items-center gap-2">
+                        <span class="material-symbols-outlined text-2xl text-[#F66844]">play_circle</span>
+                        Watch Reviews
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
 
 
 
-
-
-"
+    </section>
 
     <script>
         const btn = document.getElementById("menu-btn")
         const mobile_menu = document.getElementById('menu')
 
-        btn.addEventListener('click',()=>{
-            if(mobile_menu.classList.contains('max-h-0')){
+        btn.addEventListener('click', () => {
+            if (mobile_menu.classList.contains('max-h-0')) {
                 mobile_menu.classList.remove('max-h-0')
                 mobile_menu.classList.add('max-h-96')
             }
-            else{
+            else {
                 mobile_menu.classList.remove('max-h-96')
                 mobile_menu.classList.add('max-h-0')
             }
