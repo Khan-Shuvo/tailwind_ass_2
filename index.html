@@ -81,6 +81,28 @@
 
     </header>
 
+
+
+
+
+
+"
+
+    <script>
+        const btn = document.getElementById("menu-btn")
+        const mobile_menu = document.getElementById('menu')
+
+        btn.addEventListener('click',()=>{
+            if(mobile_menu.classList.contains('max-h-0')){
+                mobile_menu.classList.remove('max-h-0')
+                mobile_menu.classList.add('max-h-96')
+            }
+            else{
+                mobile_menu.classList.remove('max-h-96')
+                mobile_menu.classList.add('max-h-0')
+            }
+        })
+    </script>
 </body>
 
 </html>
