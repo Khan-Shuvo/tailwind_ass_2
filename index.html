@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Font Awesome CDN -->
+    <!-- google icon CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
     <title>Document</title>
 </head>
@@ -85,7 +88,7 @@
     <!-- hero section -->
 
     <section
-        class="h-screen bg-cover bg-center bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/images/banner.png')] bg-black/60 ">
+        class=" relative h-screen bg-cover bg-center bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/images/banner.png')] bg-black/60 ">
         <div class="flex flex-col justify-center h-full px-6 md:px-20 text-white">
             <!-- heading -->
             <h1 class="text-4xl md:text-6xl font-bold leading-tight">
@@ -109,6 +112,16 @@
                 </div>
             </div>
 
+
+        </div>
+
+        <!-- bottom social icon -->
+
+        <div
+            class=" absolute bg-[url('assets/images/soceal_icon_bg.png')] bg-cover bg-center -bottom-4 left-0 flex gap-5 justify-center items-center w-56 h-16 z-50 py-4">
+            <a href="#"><i class="fa-brands fa-facebook text-white text-2xl"></i>
+            </a><a href="#"><i class="fa-brands fa-google text-white text-2xl"></i></a>
+            <a href="#"> <i class="fa-brands fa-youtube text-white text-2xl"></i></a>
 
         </div>
 
